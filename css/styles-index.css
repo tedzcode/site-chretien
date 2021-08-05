@@ -1,0 +1,134 @@
+body {
+	background-image: url("css-img/bg1-t4-2.jpg");
+	background-repeat: no-repeat;
+	/*center = centre sur le milieu ; center top = centre vers le haut*/
+	background-position: center;
+	/*contain = retraicit l'image ; cover = aggrandit l'image*/
+	background-size: cover;
+	/*fixed = lorsque je scroll la page web, le fond reste figé et collé à la page*/
+	background-attachment: fixed;
+}
+
+
+
+
+											/* nav.menu-nav */
+nav.menu-nav ul li.btn{
+	list-style-position: center;
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 15px;
+	margin-bottom: 21px;
+}
+
+nav.menu-nav ul li.btn a{
+	color: white;
+	background-color: darkgreen;
+	text-decoration: none;
+	padding: 10px;
+}
+
+nav.menu-nav ul li.btn:hover a{
+	color: darkgreen;
+	background-color: navajowhite;
+	transition: 0.5s all;
+}
+
+
+
+
+											/* div#content */
+div#content div{
+	display: inline-block;
+	width: 45%;
+	margin: 25px;
+	text-align: justify;
+	vertical-align: text-top;
+}
+
+/*div#content div.droite:hover {
+	color: yellow;
+	background-color: mediumvioletred;
+	margin: 15px;
+	border-radius: 5%;
+}
+
+div#content div.gauche:hover {
+	color: yellow;
+	background-color: mediumvioletred;
+	margin: 15px;
+	border-radius: 5%;
+}*/
+
+div.image img{
+	width: 95%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+											/* sizes */
+@media all and (max-device-width: 1080px){
+	body div#content div{
+		margin: 15px;
+	}
+}
+
+@media all and (max-device-width: 720px){
+	body div#content div {
+		font-size: 20px;
+	}
+
+	/* faire en sorte d'enlever le hover sur les petites plateformes, 
+	notamment celles qui se rapportent à une interface tactile */
+
+	/*div#content div.droite:hover {
+		color: black;
+		background-color: transparent;
+		margin: 15px;
+		border-radius: 5%;
+	}
+
+	div#content div.gauche:hover {
+		color: black;
+		background-color: transparent;
+		margin: 15px;
+		border-radius: 5%;
+	}*/
+}
+
+@media all and (max-device-width: 675px){
+	body div#content div{
+		width: 95%;
+		margin: 15px;
+	}
+}
+
+@media all and (max-device-width: 535px){
+	body nav.menu-nav ul li.btn a{
+		margin: 10px;
+		margin-bottom: 15px;
+		vertical-align: center;
+		font-size: 20px;
+	}
+}
+
+@media all and (max-device-width: 310px){
+	body nav.menu-nav ul li.btn a{
+		margin: 0px;
+		margin-bottom: 25px;
+		vertical-align: center;
+		font-size: 25px;
+	}
+}
+
+@media all and (max-device-width: 210px){
+	body nav.menu-nav ul li.btn a{
+		font-size: 30px;
+	}
+	body div#content div{
+		font-size: 10px;
+	}
+}

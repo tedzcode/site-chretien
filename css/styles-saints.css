@@ -1,0 +1,62 @@
+body {
+	background-image: url("css-img/bg1-t4-2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+
+											/* div#content */
+nav.menu-nav ul li.btn{
+	list-style-position: center;
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 15px;
+	margin-bottom: 21px;
+}
+
+nav.menu-nav ul li.btn a{
+	color: white;
+	background-color: darkgreen;
+	text-decoration: none;
+	padding: 10px;
+}
+
+nav.menu-nav ul li.btn:hover a{
+	color: darkgreen;
+	background-color: navajowhite;
+	transition: 0.5s all;
+}
+
+
+
+											/* div#content */
+
+
+
+											/* sizes */
+@media all and (max-device-width: 535px) {
+	body nav.menu-nav ul li.btn a{
+		margin: 10px;
+		margin-bottom: 15px;
+		vertical-align: center;
+		font-size: 20px;
+	}
+}
+
+@media all and (max-device-width: 310px) {
+	body nav.menu-nav ul li.btn a{
+		margin: 0px;
+		margin-bottom: 25px;
+		vertical-align: center;
+		font-size: 25px;
+	}
+}
+
+@media all and (max-device-width: 210px){
+	body nav.menu-nav ul li.btn a{
+		font-size: 30px;
+	}
+}

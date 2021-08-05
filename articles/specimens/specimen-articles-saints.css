@@ -1,0 +1,46 @@
+header h2{
+	:none
+}
+
+body {
+	background-color: lightpink;
+}
+
+article {
+	border-style: solid;
+	font-size: 22px;
+	margin: 10px;
+	line-height: 1.3;
+}
+
+article.art1 div {
+	display: inline-block;
+	vertical-align: text-top;
+}
+
+article.art1 div.txt1 ul li{
+	margin: 10px;
+	padding-bottom: 5px;
+}
+
+article.art1 div.img1 img {
+	width: 100%;
+}
+
+section.bas article.art3{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	background-color: #b6b2e7;
+
+}
+
+section.bas article.art3 img {
+	margin: 5px;
+}
+
+blockquote {
+	font-size: 20px;
+	background-color: #25f34e;
+}
